@@ -1,9 +1,9 @@
 {
-  "name": "portfolio-site",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "engines" : {
-    "node" : ">=18.17.0"
+  "engines": {
+    "node": ">=18.17.0"
   },
   "scripts": {
     "dev": "next dev",
