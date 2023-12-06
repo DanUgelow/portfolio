@@ -7,6 +7,7 @@ const nextConfig = {
   output: "export",
   // Add basePath
   basePath: isProd ? "/portfolio" : "",
+  images: { unoptimized: true },
 };
 
 module.exports = nextConfig;

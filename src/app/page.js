@@ -1,108 +1,59 @@
 import Image from "next/image";
-import styles from "./page.module.css";
-import { Box, Typography } from "@mui/material";
+import styles from "./page.module.scss";
+import { Box, Typography, Divider } from "@mui/material";
+import Experience from "@/components/Experience";
+// import EmailIcon from "@mui/icons-material/Email";
 
 export default function Home() {
   return (
-    <Box>
-      <Typography variant='h1' fontWeight='bold'>
-        Dan Ugelow
-      </Typography>
-      <Image
-        src='/profile-picture.jpg'
-        priority
-        alt=''
-        width='600'
-        height='800'
-      />
-    </Box>
-    // <main className={styles.main}>
-    //   <div className={styles.description}>
-    //     <p>
-    //       Get started by editing&nbsp;
-    //       <code className={styles.code}>src/app/page.js</code>
-    //     </p>
-    //     <div>
-    //       <a
-    //         href='https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-    //         target='_blank'
-    //         rel='noopener noreferrer'
-    //       >
-    //         By{" "}
-    //         <Image
-    //           src='/vercel.svg'
-    //           alt='Vercel Logo'
-    //           className={styles.vercelLogo}
-    //           width={100}
-    //           height={24}
-    //           priority
-    //         />
-    //       </a>
-    //     </div>
-    //   </div>
-
-    //   <div className={styles.center}>
-    //     <Image
-    //       className={styles.logo}
-    //       src='next.svg'
-    //       alt='Next.js Logo'
-    //       width={180}
-    //       height={37}
-    //       priority
-    //     />
-    //   </div>
-
-    //   <div className={styles.grid}>
-    //     <a
-    //       href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-    //       className={styles.card}
-    //       target='_blank'
-    //       rel='noopener noreferrer'
-    //     >
-    //       <h2>
-    //         Docs <span>-&gt;</span>
-    //       </h2>
-    //       <p>Find in-depth information about Next.js features and API.</p>
-    //     </a>
-
-    //     <a
-    //       href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-    //       className={styles.card}
-    //       target='_blank'
-    //       rel='noopener noreferrer'
-    //     >
-    //       <h2>
-    //         Learn <span>-&gt;</span>
-    //       </h2>
-    //       <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-    //     </a>
-
-    //     <a
-    //       href='https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-    //       className={styles.card}
-    //       target='_blank'
-    //       rel='noopener noreferrer'
-    //     >
-    //       <h2>
-    //         Templates <span>-&gt;</span>
-    //       </h2>
-    //       <p>Explore starter templates for Next.js.</p>
-    //     </a>
-
-    //     <a
-    //       href='https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
-    //       className={styles.card}
-    //       target='_blank'
-    //       rel='noopener noreferrer'
-    //     >
-    //       <h2>
-    //         Deploy <span>-&gt;</span>
-    //       </h2>
-    //       <p>
-    //         Instantly deploy your Next.js site to a shareable URL with Vercel.
-    //       </p>
-    //     </a>
-    //   </div>
-    // </main>
+    <>
+      <Box className={styles.headerBackground}>
+        <Box className={styles.container}>
+          <Box className={styles.menu}>
+            {/* <EmailIcon /> Contact */}
+            <img src='GitHub_Logo.png' alt='linkedIn' />
+            <img src='LI-logo.png' alt='linkedIn' />
+          </Box>
+          <Box className={styles.header}>
+            <Box>
+              <Typography
+                variant='h1'
+                fontWeight='bold'
+                fontSize='2.5rem'
+                color='#28282B'
+              >
+                Dan Ugelow
+              </Typography>
+              <Box className={styles.tagline}>
+                <Typography variant='h2' fontSize='1.5rem' color='#28282B'>
+                  Software Developer & UX Designer
+                </Typography>
+                <Divider color='#f4ad23' />
+                <Divider color='#f4ad23' />
+              </Box>
+              <Typography variant='body1' color='#28282B'>
+                I&apos;m a Front End Developer with experience building design
+                language libraries, web/native apps, and designing for
+                web/native, ranging from proof-of-concepts, improving user
+                experiences, to delivering for marketing, business, and design
+                initiatives.
+              </Typography>
+              <Typography variant='body1' color='#28282B'>
+                Some of my specializations include React, accessibility, UX
+                research/design, and code standards.
+              </Typography>
+            </Box>
+            <Box className={styles.spacer}></Box>
+            <Box className={styles.profilePicContainer}>
+              <Box className={styles.profilePic}></Box>
+              <img src='profile-shape.png' alt='linkedIn' />
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+      <section>
+        <Experience />
+      </section>
+    </>
   );
 }
