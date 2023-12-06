@@ -45,7 +45,12 @@ export default function Home() {
             </Box>
             <Box className={styles.spacer}></Box>
             <Box className={styles.profilePicContainer}>
-              <Box className={styles.profilePic}></Box>
+              <Box
+                className={styles.profilePic}
+                sx={{
+                  backgroundImage: 'url("/profile-pic.png")',
+                }}
+              ></Box>
               <img src='profile-shape.png' alt='linkedIn' />
             </Box>
           </Box>
