@@ -11,8 +11,9 @@ export default function Home() {
         <Box className={styles.container}>
           <Box className={styles.menu}>
             {/* <EmailIcon /> Contact */}
-            <img src='GitHub_Logo.png' alt='linkedIn' />
-            <img src='LI-logo.png' alt='linkedIn' />
+            {/* use MUI icons for both */}
+            {/* <img src='GitHub_Logo.png' alt='github' />
+            <img src='LI-logo.png' alt='linkedIn' /> */}
           </Box>
           <Box className={styles.header}>
             <Box>
@@ -48,7 +49,7 @@ export default function Home() {
               <Box
                 className={styles.profilePic}
                 sx={{
-                  backgroundImage: 'url("/profile-pic.png")',
+                  backgroundImage: 'url("profile-pic.png")',
                 }}
               ></Box>
               <img src='profile-shape.png' alt='linkedIn' />
