@@ -26,15 +26,15 @@ export default function Home() {
           <GitHubIcon />
         </Tooltip>
       </a>
-      <a
-        href='mailto:dan.ugelow@gmail.com'
+      {/* <a
+        href='mailto:'
         target='_blank'
         className={styles.email}
       >
         <Tooltip title='Email' placement='bottom'>
           <EmailIcon />
         </Tooltip>
-      </a>
+      </a> */}
     </>
   );
 
@@ -90,6 +90,7 @@ export default function Home() {
                   md: "none",
                 },
                 marginTop: "40px",
+                textAlign: "center",
               }}
             >
               {renderSocial()}
