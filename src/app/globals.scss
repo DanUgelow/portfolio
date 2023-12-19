@@ -1,6 +1,12 @@
-/* body {
-  background-color: #f8f9fa;
-} */
+$break-md: 900px;
+
+body {
+  /* background-color: #f8f9fa; */
+
+  @media screen and (min-width: $break-md) {
+    background-color: #e3e3e9;
+  }
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -130,4 +136,9 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+html,
+body {
+  height: 100%;
 }

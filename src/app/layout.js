@@ -1,7 +1,7 @@
-import { Poppins } from "next/font/google";
-import "./globals.css";
+import { Poppins, Open_Sans } from "next/font/google";
+import "./globals.scss";
 
-const inter = Poppins({ subsets: ["latin"], weight: "300", style: "normal" });
+const inter = Open_Sans({ subsets: ["latin"], style: "normal" });
 
 export const metadata = {
   title: "Dan Ugelow's Portfolio",
