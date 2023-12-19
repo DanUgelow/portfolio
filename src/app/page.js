@@ -1,15 +1,10 @@
-import Image from "next/image";
 import styles from "./page.module.scss";
-import { Box, Typography, Divider, useMediaQuery } from "@mui/material";
+import { Box, Typography, Divider, Tooltip } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
-// import Experience from "@/components/Experience";
-// import EmailIcon from "@mui/icons-material/Email";
 
 export default function Home() {
-  // const isDesktop = useMediaQuery("(min-width:900px)");
-
   const renderSocial = () => (
     <>
       <a
@@ -17,21 +12,28 @@ export default function Home() {
         target='_blank'
         className={styles.linkedin}
       >
-        <LinkedInIcon />
+        <Tooltip title='LinkedIn' placement='bottom'>
+          <LinkedInIcon />
+        </Tooltip>
       </a>
+
       <a
         href='https://github.com/DanUgelow'
         target='_blank'
         className={styles.github}
       >
-        <GitHubIcon />
+        <Tooltip title='GitHub' placement='bottom'>
+          <GitHubIcon />
+        </Tooltip>
       </a>
       <a
         href='mailto:dan.ugelow@gmail.com'
         target='_blank'
         className={styles.email}
       >
-        <EmailIcon />
+        <Tooltip title='Email' placement='bottom'>
+          <EmailIcon />
+        </Tooltip>
       </a>
     </>
   );
@@ -62,7 +64,12 @@ export default function Home() {
                 user experiences, to delivering for marketing, business, and
                 design initiatives.
               </Typography>
-              <Typography fontWeight='medium'>
+              <Typography
+                fontWeight='medium'
+                sx={{
+                  marginTop: "60px !important",
+                }}
+              >
                 You may have seen me at...
               </Typography>
               <Box>

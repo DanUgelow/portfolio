@@ -4,7 +4,7 @@ import "./globals.scss";
 const inter = Open_Sans({ subsets: ["latin"], style: "normal" });
 
 export const metadata = {
-  title: "Dan Ugelow's Portfolio",
+  title: "Dan Ugelow - Web Developer & Designer",
   description: "A personal portfolio website",
 };
 
