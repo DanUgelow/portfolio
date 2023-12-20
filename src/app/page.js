@@ -40,6 +40,18 @@ export default function Home() {
 
   return (
     <>
+      <Box
+        sx={{
+          backgroundImage: 'url("papyrus.webp")',
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          zIndex: -1,
+          display: {
+            md: "none",
+          },
+        }}
+      />
       <Box className={styles.container}>
         <Box className={styles.card}>
           <Box className={styles.infoContainer}>
@@ -103,7 +115,6 @@ export default function Home() {
                 xs: "none",
                 md: 'url("dark-paths.png")',
               },
-              backgroundColor: { xs: "white" },
             }}
           >
             <Box className={styles.profilePicContainer}>
