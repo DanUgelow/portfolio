@@ -6,7 +6,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: "export",
   // Add basePath
-  basePath: isProd ? "/portfolio" : "",
+  basePath: isProd ? "" : "",
   images: { unoptimized: true },
 };
 
