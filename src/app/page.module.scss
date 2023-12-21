@@ -17,18 +17,20 @@ $break-lg: 1100px;
   min-height: 620px;
   flex-basis: 100%;
   flex-direction: column-reverse;
-  border-radius: 0;
+  background-color: white;
+  border-radius: 20px;
+  margin: 40px 20px;
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 
   @media screen and (min-width: $break-md) {
     flex-basis: auto;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 20px;
-    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
-      0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
-      0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+    border: none;
   }
 
   svg {
@@ -38,6 +40,7 @@ $break-lg: 1100px;
     font-size: 2.5rem;
     cursor: pointer;
     transition: transform 200ms ease-in-out;
+    margin-bottom: 20px;
   }
 
   svg:hover {

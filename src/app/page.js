@@ -43,13 +43,10 @@ export default function Home() {
       <Box
         sx={{
           backgroundImage: 'url("papyrus.webp")',
-          position: "absolute",
+          position: "fixed",
           width: "100%",
           height: "100%",
           zIndex: -1,
-          display: {
-            md: "none",
-          },
         }}
       />
       <Box className={styles.container}>
