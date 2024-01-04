@@ -76,16 +76,23 @@ export default function Home() {
               <Typography
                 fontWeight='medium'
                 sx={{
-                  marginTop: "60px !important",
+                  marginTop: "30px !important",
                 }}
               >
                 You may have seen me at...
               </Typography>
               <Box>
-                <Typography fontWeight='bold'>
+                <Typography
+                  fontWeight='bold'
+                  sx={{
+                    marginTop: "12px !important",
+                  }}
+                >
                   Care.com
                   <br />
                   E*TRADE
+                  <br />
+                  McCann Worldgroup
                   <br />
                   AT&T <br />
                   JUICE Pharma Worldwide LLC
